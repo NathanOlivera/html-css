@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ff8fab;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #ffe5ec;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: #ff8fab;
+            padding: 3px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.374);
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        main {
+            background-color: #ffe5ec;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.324);
+        }
+
+        article {
+            background-color: #ffc2d1;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: #ffb3c6;
+        }
+
+        footer {
+            background-color: #fb6f92;
+            color: black;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Futebol</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi dolorum eaque repellat qui veritatis sit quidem, a iusto error minima, dignissimos provident rerum eum alias expedita? Corrupti id quaerat eveniet!</p>
+                <aside>Artigo escrito por mim</aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por NOSG</p>
+    </footer>
+</body>
+</html>
