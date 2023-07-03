@@ -2,65 +2,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion one', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
 * {
     margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
-    position: relative;
-    height: 200px;
     color: white;
     background-color: black;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header > div {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 header h1 {
-    font-family: 'Passion One', cursive;
-    font-weight: bold;
-    font-size: 50px;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header p {
+    padding-bottom: 50px;
 }
 
 
-header a {
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-main {
-    font-family: 'Sriracha';
-    font-size: 1.5em;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
-main section {
-    padding: 50px;
+section > p {
+    padding-bottom: 2em;
 }
 
-#s2 > p, #s4 > p{
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgb(10, 10, 10);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.397);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem > p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.481);
-    width: 300px;
     color: white;
     text-shadow: 1px 1px 1px black;
 }
 
 #s2 {
     background-image: url(imagens/background001.jpg);
-    background-size: cover;
+    background-position: right center;
 }
 
 #s4 {
     background-image: url(imagens/background002.jpg);
-    background-size: cover;
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
